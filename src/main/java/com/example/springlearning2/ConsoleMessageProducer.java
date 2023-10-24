@@ -1,10 +1,11 @@
 package com.example.springlearning2;
 
-import java.util.Scanner;
+import org.springframework.stereotype.Service;
 
+import java.util.Scanner;
+@Service
 public class ConsoleMessageProducer implements MessageProducer{
 
-    //wstrzyknięcie za pomocą @Override?
     @Override
     public String getMessage() {
         Scanner scanner = new Scanner(System.in);

@@ -1,12 +1,14 @@
 package com.example.springlearning2;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
 public class MessagePrinter {
+   // @Autowired może być ale nie musi, raczej nie dawać i wstrzykiwać przez konstruktor
+    private final MessageProducer messageProducer;
 
-    //wstrzykujemy poziom abstrakcji czyli w tym wypadku interfejs
-    //wskazujemy że wykorzytujemy stopień abstrakcji, który gdzieś jest zaimplementowany
-    private final MessageProducer messageProducer; //zmieniony typ
-
-    public MessagePrinter(MessageProducer messageProducer) { //zmieniony typ
+    public MessagePrinter(MessageProducer messageProducer) {
         this.messageProducer = messageProducer;
     }
 
