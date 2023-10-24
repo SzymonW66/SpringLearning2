@@ -1,16 +1,17 @@
 package com.example.springlearning2;
 
 public class MessagePrinter {
-    SimpleMessageProducer simpleMessageProducer = new SimpleMessageProducer();
 
+    //wstrzykujemy poziom abstrakcji czyli w tym wypadku interfejs
+    //wskazujemy że wykorzytujemy stopień abstrakcji, który gdzieś jest zaimplementowany
+    private final MessageProducer messageProducer; //zmieniony typ
 
-    //wstrzykiwanie przez konstruktor
-    public MessagePrinter(SimpleMessageProducer simpleMessageProducer) {
-        this.simpleMessageProducer = simpleMessageProducer;
+    public MessagePrinter(MessageProducer messageProducer) { //zmieniony typ
+        this.messageProducer = messageProducer;
     }
 
-    public void printMessage(){
-        String message = simpleMessageProducer.getMessage();
+    public void printMessage() {
+        String message = messageProducer.getMessage();
         System.out.println(message);
     }
 }
