@@ -1,6 +1,6 @@
 package com.example.springlearning2;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.springlearning2.producer.MessageProducer;
 import org.springframework.stereotype.Service;
 
 @Service

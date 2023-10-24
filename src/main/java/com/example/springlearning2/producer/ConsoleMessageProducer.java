@@ -1,10 +1,12 @@
-package com.example.springlearning2;
+package com.example.springlearning2.producer;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Scanner;
 @Service
-public class ConsoleMessageProducer implements MessageProducer{
+@Profile("console")
+public class ConsoleMessageProducer implements MessageProducer {
 
     @Override
     public String getMessage() {
