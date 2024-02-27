@@ -1,4 +1,4 @@
-package com.example.springlearning2;
+package com.example.springlearning2.Chapter1.lectures;
 
 import org.springframework.stereotype.Controller;
 

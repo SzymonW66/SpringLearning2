@@ -1,6 +1,6 @@
-package com.example.springlearning2;
+package com.example.springlearning2.Chapter1.lectures;
 
-import com.example.springlearning2.producer.MessageProducer;
+import com.example.springlearning2.Chapter1.lectures.producer.MessageProducer;
 import org.springframework.stereotype.Service;
 
 @Service
