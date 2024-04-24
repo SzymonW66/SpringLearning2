@@ -1,4 +1,4 @@
-package com.example.springlearning2.Chapter1.ex12345.Cipher;
+package com.example.springlearning2.Chapter1.ex12345.cipher;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;

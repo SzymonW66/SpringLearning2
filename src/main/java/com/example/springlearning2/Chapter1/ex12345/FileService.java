@@ -1,6 +1,6 @@
 package com.example.springlearning2.Chapter1.ex12345;
 
-import com.example.springlearning2.Chapter1.ex12345.Cipher.CipherService;
+import com.example.springlearning2.Chapter1.ex12345.cipher.CipherService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
